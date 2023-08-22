@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDO</title>
+    <link rel="stylesheet" href="style_uyg.css">
+    
+</head>
+<body onload="All()">
+    
+    <div id="divv">
+        <div id="h1" class="h"><h1>- To Do -</h1></div>
+    
+        <div id="h2" class="h"><h2>Yapılacaklar Listesi</h2></div>
+
+        <div id="ib" class="h" >
+            <form class="e_s_f" >
+                <input id="input" class="inp" type="text" placeholder="Bugün ne yapacaksın?">
+                <button id="btn" onclick="add(event)">Ekle</button> 
+            </form>
+            <div class="kutu">
+                <div class="frm">
+                    <form class="update_form" >
+                        <input type="text" hidden class="id">
+                        <input type="text" class="uname" placeholder="...">
+                    </form>
+                </div>
+                <div class="add_div">
+                    <button class="btnn" onclick="update()">Güncel Ekle</button>
+                </div>
+            </div>
+            
+
+            
+
+            <table id="myTable">
+                <tbody class="data_table">
+    
+                </tbody>
+                <!--<tr><td class="td">yemek yap <button class="g_button"></button> </td></tr>
+                <tr><td class="td">3 litre su iç <button class="g_button"></button></td> </tr> -->
+                
+                
+            </table>
+        </div>
+        
+    </div>
+    
+    
+    <script src="uyg.js"></script>
+    
+</body>
+</html>
